@@ -1,0 +1,143 @@
+/* =========================
+   VARIÁVEIS
+========================= */
+:root {
+  --primary: #0B3D2E;
+  --accent: #F2C94C;
+  --bg-dark: rgba(6,47,37,.9);
+  --text: #e8eef5;
+  --error: #E63946;
+}
+
+/* =========================
+   RESET
+========================= */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   FUNDO
+========================= */
+.auth-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(var(--bg-dark), var(--bg-dark)),
+    url("../../assets/images/stadium.jpg")center/cover no-repeat;
+}
+
+/* =========================
+   CARD
+========================= */
+.auth-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 46px;
+  text-align: center;
+  background: rgba(255,255,255,.95);
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0,0,0,.35);
+  animation: fadeIn .6s ease;
+}
+
+/* =========================
+   TEXTO
+========================= */
+.auth-container h2 {
+  margin: 0 0 6px;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.auth-container p,
+.auth-container span {
+  font-size: 14px;
+  color: #666;
+}
+
+/* =========================
+   FORM
+========================= */
+.auth-container form {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.auth-container input {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+.auth-container input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: #fff;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+.auth-container button {
+  margin-top: 8px;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--accent), #e6bc3f);
+  color: var(--text);
+}
+
+.auth-container button:hover {
+  transform: translateY(-1px);
+}
+
+/* =========================
+   MENSAGENS
+========================= */
+.error,
+.success {
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.error {
+  background: #fdeaea;
+  color: var(--error);
+}
+
+.success {
+  background: #e6f4ef;
+  color: var(--primary);
+}
+
+/* =========================
+   LINKS
+========================= */
+.auth-container a {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   ANIMAÇÃO
+========================= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

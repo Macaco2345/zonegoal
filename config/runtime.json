@@ -1,0 +1,5 @@
+{
+    "api_enabled": true,
+    "favorites_limit": 10,
+    "refresh_interval": 30
+}

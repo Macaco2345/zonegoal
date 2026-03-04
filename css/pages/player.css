@@ -1,0 +1,423 @@
+/* ===== Player Page (UI final) ===== */
+
+.player-page{
+  width: min(980px, 92vw);
+  margin: 0 auto 60px;
+}
+
+.player-topbar{
+  margin-top: 6px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+}
+
+.player-title{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  min-width:0;
+}
+
+.player-ico{
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.player-title .t1{
+  font-weight: 950;
+  font-size: 16px;
+}
+.player-title .t2{
+  margin-top: 4px;
+  font-weight: 850;
+  opacity: .72;
+  font-size: 12px;
+}
+
+.zg-back{
+  text-decoration:none;
+  color:#cfe6ff;
+  font-weight: 950;
+  border: 1px solid rgba(90,170,255,0.35);
+  background: rgba(90,170,255,0.10);
+  padding: 10px 14px;
+  border-radius: 999px;
+}
+.zg-back:hover{
+  background: rgba(90,170,255,0.14);
+  border-color: rgba(90,170,255,0.45);
+}
+
+.zg-card{
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.zg-card-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  margin-bottom: 12px;
+}
+.zg-card-head .h1{ font-weight: 950; }
+.zg-card-head .h2{ font-weight: 850; opacity: .75; font-size: 12px; }
+
+.player-hero{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap: 18px;
+}
+
+.p-left{
+  display:flex;
+  align-items:flex-start;
+  gap: 14px;
+  min-width:0;
+  flex: 1;
+}
+
+.p-photo{
+  width: 74px;
+  height: 74px;
+  border-radius: 18px;
+  object-fit: cover;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+}
+
+.p-photo.ph{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight: 950;
+  opacity: .6;
+}
+
+.p-main{
+  min-width:0;
+}
+
+.p-name{
+  font-weight: 950;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.p-subline{
+  margin-top: 6px;
+  display:flex;
+  align-items:center;
+  gap: 8px;
+  flex-wrap:wrap;
+  font-weight: 850;
+  opacity: .85;
+  font-size: 12px;
+}
+
+.flag{
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.12);
+  object-fit: cover;
+}
+
+.dot{ opacity:.55; }
+
+.p-chips{
+  margin-top: 10px;
+  display:flex;
+  gap: 8px;
+  flex-wrap:wrap;
+}
+
+.chip{
+  display:inline-flex;
+  align-items:center;
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-weight: 950;
+  font-size: 12px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  opacity:.95;
+}
+.chip-gold{ background: rgba(255,196,0,0.12); border-color: rgba(255,196,0,0.35); color:#ffd36a; }
+.chip-blue{ background: rgba(90,170,255,0.12); border-color: rgba(90,170,255,0.35); color:#cfe6ff; }
+.chip-red{ background: rgba(255,65,65,0.12); border-color: rgba(255,65,65,0.30); color:#ffb9b9; }
+
+.p-right{
+  min-width: 280px;
+  text-align:right;
+  opacity: .95;
+}
+
+.mini{
+  font-weight: 950;
+  font-size: 12px;
+  opacity: .75;
+  margin-top: 6px;
+}
+
+.row{
+  margin-top: 8px;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  gap: 10px;
+  font-weight: 900;
+}
+
+.mini-logo{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.link{
+  color:#e7edf5;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  gap: 10px;
+  justify-content:flex-end;
+}
+.link:hover{ color:#cfe6ff; }
+
+.muted{ opacity:.75; font-weight: 850; }
+
+.player-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.metrics{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.m{
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.m .k{
+  font-weight: 900;
+  opacity: .75;
+  font-size: 12px;
+}
+.m .v{
+  margin-top: 6px;
+  font-weight: 950;
+  font-size: 18px;
+}
+
+.empty-message{
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.02);
+  border: 1px dashed rgba(255,255,255,0.12);
+  opacity: .85;
+  font-weight: 850;
+}
+
+/* responsive */
+@media (max-width: 900px){
+  .player-grid{ grid-template-columns: 1fr; }
+  .p-right{ min-width: 0; text-align:left; }
+  .row{ justify-content:flex-start; }
+}
+
+@media (max-width: 520px){
+  .p-name{ font-size: 18px; }
+  .p-photo{ width: 64px; height: 64px; border-radius: 16px; }
+  .metrics{ grid-template-columns: 1fr 1fr; }
+}
+.player-controls{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.player-controls .controls{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.ctl{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  font-size:12px;
+  color:#9aa6b2;
+}
+
+.zg-select{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:12px;
+  padding:10px 12px;
+  color:#e6edf3;
+  outline:none;
+}
+
+.tabs{
+  display:flex;
+  gap:8px;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:14px;
+  padding:6px;
+}
+
+.tab{
+  background:transparent;
+  border:0;
+  color:#aab6c2;
+  padding:8px 12px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.tab.active{
+  background:rgba(255,255,255,.07);
+  color:#fff;
+}
+
+.kpi-grid{
+  display:grid;
+  grid-template-columns:repeat(4, minmax(0,1fr));
+  gap:12px;
+  padding:12px;
+}
+
+.kpi{
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:14px;
+  padding:12px;
+}
+
+.kpi-k{ font-size:12px; color:#9aa6b2; }
+.kpi-v{ font-size:18px; font-weight:800; margin-top:6px; }
+.kpi-h{ font-size:12px; color:#aab6c2; margin-top:4px; }
+
+.zg-split{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  padding:12px;
+}
+
+.zg-card-inner{
+  background:rgba(255,255,255,.02);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:16px;
+  padding:12px;
+}
+
+.inner-title{
+  font-size:13px;
+  font-weight:800;
+  margin-bottom:10px;
+  color:#e6edf3;
+}
+
+.metrics{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0,1fr));
+  gap:10px;
+}
+
+.m{
+  background:rgba(255,255,255,.02);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:14px;
+  padding:10px;
+}
+
+.m .k{ font-size:12px; color:#9aa6b2; }
+.m .v{ font-size:16px; font-weight:800; margin-top:6px; }
+.m .s{ font-size:12px; color:#aab6c2; margin-top:4px; }
+
+@media (max-width: 900px){
+  .kpi-grid{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+  .zg-split{ grid-template-columns:1fr; }
+  .metrics{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+}
+.trophy-list{ display:flex; flex-direction:column; gap:10px; }
+.trophy-row{
+  background:rgba(255,255,255,.02);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:14px;
+  padding:10px 12px;
+}
+.trophy-name{ font-weight:800; }
+.trophy-meta{ margin-top:4px; font-size:12px; color:#aab6c2; }
+
+.career-list{ display:flex; flex-direction:column; gap:10px; margin-top:8px; }
+.career-row{
+  display:grid;
+  grid-template-columns:120px 1fr 140px;
+  gap:10px;
+  align-items:center;
+  background:rgba(255,255,255,.02);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:14px;
+  padding:10px 12px;
+}
+.career-date{ font-size:12px; color:#9aa6b2; }
+.career-type{ font-size:12px; color:#aab6c2; text-align:right; }
+.career-move{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.career-arrow{ color:#9aa6b2; font-weight:800; }
+
+@media (max-width: 900px){
+  .career-row{ grid-template-columns:1fr; }
+  .career-type{ text-align:left; }
+}
+/* Select escuro consistente */
+.zg-select{
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 12px;
+  padding: 10px 12px;
+  color: #e6edf3;
+  outline: none;
+}
+
+/* ✅ resolve opções “em branco” (menu do select) */
+.zg-select option{
+  background: #0f141b;  /* fundo escuro */
+  color: #e6edf3;       /* texto claro */
+}
+
+/* opcional: foco mais “premium” */
+.zg-select:focus{
+  border-color: rgba(255,255,255,.18);
+  box-shadow: 0 0 0 3px rgba(255,255,255,.06);
+}

@@ -1,0 +1,121 @@
+/* ===== cores ===== */
+:root {
+  --primary: #0B3D2E;
+  --accent: #F2C94C;
+  --text: #e8eef5;
+  --error: #E63946;
+}
+
+/* ===== reset ===== */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== background ===== */
+.auth-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(6,47,37,.9), rgba(6,47,37,.9)),
+    url("../../assets/images/stadium.jpg")center/cover no-repeat;
+}
+
+/* ===== CARD ===== */
+.auth-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 46px;
+  text-align: center;
+  background: rgba(255,255,255,.96);
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0,0,0,.35);
+  animation: fadeIn .6s ease;
+}
+
+/* ===== textos ===== */
+.auth-container h2 {
+  margin: 0 0 6px;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.auth-container p,
+.auth-container span {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ===== FORM ===== */
+.auth-container form {
+  margin-top: 22px;
+}
+
+.auth-container input,
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.auth-container input {
+  margin-bottom: 14px;
+  border: 1px solid #ddd;
+}
+
+.auth-container input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* ===== botoes ===== */
+.auth-container button {
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: var(--accent);
+  color: var(--text);
+}
+
+.auth-container button:hover {
+  background: #e6bc3f;
+}
+
+/* ===== mensagens ===== */
+.error,
+.success {
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.error {
+  background: #fdeaea;
+  color: var(--error);
+}
+
+.success {
+  background: #e6f4ef;
+  color: var(--primary);
+}
+
+/* ===== links ===== */
+.auth-container a {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
+
+/* ===== animaçao ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

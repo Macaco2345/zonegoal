@@ -1,0 +1,74 @@
+.admin-wrap{max-width:1100px;margin:0 auto}
+.admin-head h1{margin:0;font-size:24px}
+.admin-sub{opacity:.75;margin-top:6px;font-weight:800}
+
+.admin-tabs{display:flex;gap:10px;margin:14px 0 16px}
+.admin-tab{
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.04);
+  color:#e7edf5;
+  padding:10px 14px;
+  border-radius:999px;
+  cursor:pointer;
+  font-weight:900;
+}
+.admin-tab.active{border-color:rgba(255,196,0,.55);background:rgba(255,196,0,.12);color:#ffd36a}
+
+.admin-card{
+  border:1px solid rgba(255,255,255,.08);
+  background:rgba(255,255,255,.03);
+  border-radius:16px;
+  padding:14px;
+}
+.admin-card-head{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:12px;margin-bottom:12px;flex-wrap:wrap;
+}
+.admin-card-head .title{font-weight:950;font-size:16px}
+.admin-card-head .actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+
+.admin-input{
+  height:40px;border-radius:14px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.04);
+  color:#e7edf5;padding:0 12px;
+  outline:none;font-weight:850;
+}
+.admin-input:focus{border-color:rgba(255,196,0,.45)}
+
+.admin-btn{
+  height:40px;padding:0 12px;border-radius:14px;
+  border:1px solid rgba(90,170,255,.40);
+  background:rgba(90,170,255,.16);
+  color:#e7edf5;font-weight:900;cursor:pointer;
+}
+.admin-btn:hover{background:rgba(90,170,255,.22)}
+.admin-btn.danger{border-color:rgba(255,65,65,.35);background:rgba(255,65,65,.16)}
+
+.admin-table-wrap{overflow:auto;border-radius:14px}
+.admin-table{width:100%;border-collapse:collapse;min-width:760px}
+.admin-table th,.admin-table td{
+  padding:10px;border-bottom:1px solid rgba(255,255,255,.06);
+  text-align:left;vertical-align:middle;
+}
+.admin-table th{font-weight:950;opacity:.9}
+
+.badge{
+  display:inline-block;padding:4px 8px;border-radius:999px;
+  font-weight:900;font-size:11px;border:1px solid rgba(255,255,255,.14);
+}
+.badge.admin{background:rgba(255,196,0,.12);border-color:rgba(255,196,0,.45);color:#ffd36a}
+.badge.user{background:rgba(90,170,255,.10);border-color:rgba(90,170,255,.25)}
+
+.admin-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.kpi{border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.02);border-radius:14px;padding:12px}
+.kpi .label{opacity:.75;font-weight:850;font-size:12px}
+.kpi .value{font-weight:950;font-size:18px;margin-top:4px}
+
+.admin-form{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.admin-label{display:flex;flex-direction:column;gap:6px;font-weight:900}
+.admin-hint{margin-top:10px;opacity:.75;font-weight:800;font-size:12px}
+
+@media (max-width:900px){
+  .admin-kpis,.admin-form{grid-template-columns:1fr}
+}
